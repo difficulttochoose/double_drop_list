@@ -10,7 +10,6 @@ a{
     text-decoration: none;
     display: block;
     padding:10px 30px;
-    background-color: #179a7b;
     border: 1px solid #0e6651;
     overflow: hidden;
     white-space: nowrap;
@@ -18,9 +17,28 @@ a{
     width: 140px;
     text-align: center;
 }
-ul{
+li:hover, a:focus{
+    background: #0e6651;
+}
+ul.list{
     list-style: none;
+    padding:20px;
+}
+ul.list > li{
+    display: inline-block;
 }
 li{
-    display: inline-block;
+    background-color: #179a7b;
+}
+.dropList{
+    position:relative;
+    display: block;
+}
+.drop{
+    position: absolute;
+    padding:0;
+    display: none;
+}
+li.dropList:hover > ul.drop{
+    display: block;
 }

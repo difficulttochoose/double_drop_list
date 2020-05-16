@@ -9,9 +9,23 @@
     <link rel="stylesheet" href="css/styles.css">
     </head>
 <body>
-<ul>
+<ul class="list">
     <li><a href="http://google.com/" title="GoogleGoogleGoogleGoogle">GoogleGoogleGoogleGoogle</a></li>
-    <li><a href="#" title="Categories">Categories</a></li>
+    <li class="dropList">
+        <a href="#" title="Categories">Categories</a>
+        <ul class="drop">
+            <li><a href="#">Men</a></li>
+            <li class="dropList">
+                <a href="#">Women</a>
+                <ul class="drop">
+                    <li><a href="#">Dress</a></li>
+                    <li><a href="#">Pants</a></li>
+                    <li><a href="#">Shoes</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Kids</a></li>
+        </ul>
+    </li>
     <li><a href="#" title="About">About</a></li>
     <li><a href="#" title="Contacts">Contacts</a></li>
 </ul>
