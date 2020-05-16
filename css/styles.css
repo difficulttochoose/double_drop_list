@@ -1,0 +1,26 @@
+*{
+    font-size: 0;
+    box-sizing: border-box;
+}
+p, a{
+    font-size: large;
+}
+a{
+    color:white;
+    text-decoration: none;
+    display: block;
+    padding:10px 30px;
+    background-color: #179a7b;
+    border: 1px solid #0e6651;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 140px;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
