@@ -3,11 +3,11 @@
     box-sizing: border-box;
 }
 
-p, a {
+.text, .nav-item {
     font-size: large;
 }
 
-a {
+.nav-item {
     color: white;
     text-decoration: none;
     display: block;
@@ -20,20 +20,20 @@ a {
     text-align: center;
 }
 
-li:hover, a:focus {
+.nav-list-item:hover, .nav-item:focus {
     background: #0e6651;
 }
 
-ul.list {
+.list {
     list-style: none;
     padding: 20px;
 }
 
-ul.list > li {
+.list > .nav-list-item {
     display: inline-block;
 }
 
-li {
+.nav-list-item {
     background-color: #179a7b;
 }
 
@@ -52,11 +52,11 @@ li {
     display: none;
 }
 
-li.dropList:hover > ul.drop {
+.nav-list-item.dropList:hover > .drop {
     display: block;
 }
 
-li.dropDrop:hover > ul.drop {
+.nav-list-item.dropDrop:hover > .drop {
     top: 0;
     left: 100%;
 }
