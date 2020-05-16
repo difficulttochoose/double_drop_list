@@ -1,15 +1,17 @@
-*{
+* {
     font-size: 0;
     box-sizing: border-box;
 }
-p, a{
+
+p, a {
     font-size: large;
 }
-a{
-    color:white;
+
+a {
+    color: white;
     text-decoration: none;
     display: block;
-    padding:10px 30px;
+    padding: 10px 30px;
     border: 1px solid #0e6651;
     overflow: hidden;
     white-space: nowrap;
@@ -17,28 +19,44 @@ a{
     width: 140px;
     text-align: center;
 }
-li:hover, a:focus{
+
+li:hover, a:focus {
     background: #0e6651;
 }
-ul.list{
+
+ul.list {
     list-style: none;
-    padding:20px;
+    padding: 20px;
 }
-ul.list > li{
+
+ul.list > li {
     display: inline-block;
 }
-li{
+
+li {
     background-color: #179a7b;
 }
-.dropList{
-    position:relative;
+
+.dropList {
+    position: relative;
     display: block;
 }
-.drop{
+
+.dropDrop {
+    position: relative;
+}
+
+.drop {
     position: absolute;
-    padding:0;
+    padding: 0;
     display: none;
 }
-li.dropList:hover > ul.drop{
+
+li.dropList:hover > ul.drop {
     display: block;
+}
+
+li.dropDrop:hover > ul.drop {
+    top: 0;
+    left: 100%;
 }
